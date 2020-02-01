@@ -76,8 +76,7 @@ m.sendMessage(args)
      const embed = new Discord.RichEmbed() 
          .setColor("#00FF00")
          .setThumbnail(message.author.avatarURL)
-         .setDescription(`**Help|هيلب
-
+         .setDescription(`**Help
        >$obc ➟  Send to everyone
        >-------------------------
        >$bc  ➟  Send to online
