@@ -14,7 +14,7 @@ client.on("message", message => {
   message.guild.members.filter(m => m.presence.status !== 'all').forEach(m => {
   m.send(`${argresult}\n ${m}`);
   })
-  message.channel.send(`\`${message.guild.members.filter( m => m.presence.status !== 'all').size}\`:mailbox:  عدد المستلمين `);
+  message.channel.send(`\`${message.guild.members.filter( m => m.presence.status !== 'all').size}\`:mailbox:  Remittee `);
   message.delete();
   };
   });
@@ -77,11 +77,12 @@ m.sendMessage(args)
          .setColor("#00FF00")
          .setThumbnail(message.author.avatarURL)
          .setDescription(`**Help
-       >$obc ➟  Send to everyone
-       >-------------------------
-       >$bc  ➟  Send to online
-       >-------------------------
-       >$adminbc ➟ Send Normal
+       -------------------------
+       $obc ➟  Send to everyone
+       -------------------------
+       $bc  ➟  Send to online
+       -------------------------
+       $adminbc ➟ Send Normal
 
        ** `)
    message.author.sendEmbed(embed)
